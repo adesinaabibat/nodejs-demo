@@ -48,7 +48,7 @@ pipeline {
       
     stage('Deploy') {
      steps{
-	     withAWS(credentials: registryCredential, region: "${AWS_DEFAULT_REGION}") {
+	     withAWS(credentials: 'aws', region: "${AWS_DEFAULT_REGION}") {
 
             
                 script {
