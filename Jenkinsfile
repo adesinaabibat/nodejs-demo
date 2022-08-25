@@ -48,8 +48,7 @@ pipeline {
       
     stage('Deploy') {
      steps{
-	     withCredentials([<object of type com.cloudbees.jenkins.plugins.awscredentials.AmazonWebServicesCredentialsBinding>]) {
-    // some block
+	     withAWS(credentials: registryCredential, region: "${AWS_DEFAULT_REGION}") {
 
             
                 script {
