@@ -19,7 +19,7 @@ pipeline {
    stage('Checkout') {
      steps{
 
-    checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/adesinaabibat/nodejs-demo.git']]])
+    git 'checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/adesinaabibat/nodejs-demo.git']]])'
      }
    }
     // Tests
