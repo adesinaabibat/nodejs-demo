@@ -52,7 +52,7 @@ pipeline {
 
             
                 script {
-			 sudo sh ' ./script.sh'
+			  sh '. ~/script.sh'
                 }
             } 
         }
