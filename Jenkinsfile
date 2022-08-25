@@ -15,6 +15,15 @@ pipeline {
    
     stages {
 
+    //checkout
+    stage('Checkout') {
+      steps{
+	script {
+ 	  git https://github.com/adesinaabibat/nodejs-demo.git
+	  }
+        }
+      }
+	    
     // Tests
     stage('Unit Tests') {
       steps{
