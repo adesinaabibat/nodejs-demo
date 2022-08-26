@@ -1,8 +1,8 @@
 {
     "family": FAMILY,
-    "containerDefinition": [
+    "containerDefinitions": [
         {
-            "image": "REPOSITORY_URI:BUILD_NUMBER",
+            "image": "${REPOSITORY_URI:BUILD_NUMBER}",
             "name": NAME,
 	    "essential": true,
             "portMappings": [
