@@ -48,11 +48,9 @@ pipeline {
       
     stage('Deploy') {
      steps{
-	     withAWS(credentials: 'aws', region: 'us-east-1') {
-
-            
+	     withAWS(credentials: 'aws', endpointUrl: 'https://ecs.us-east-1.amazonaws.com') {
                 script {
-			  sh ' sudo sh ./script.sh'
+		 sh ' sudo sh ./script.sh'
                 }
             } 
         }
