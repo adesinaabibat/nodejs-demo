@@ -1,5 +1,5 @@
 {
-    "family": FAMILY,
+    "family": "FAMILY",
     "containerDefinitions": [
         {
             "image": "${REPOSITORY_URI:BUILD_NUMBER}",
