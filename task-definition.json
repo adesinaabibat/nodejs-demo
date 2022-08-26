@@ -1,6 +1,6 @@
 {
     "family": FAMILY,
-    "containerDefinitions": [
+    "containerDefinition": [
         {
             "image": "REPOSITORY_URI:BUILD_NUMBER",
             "name": NAME,
